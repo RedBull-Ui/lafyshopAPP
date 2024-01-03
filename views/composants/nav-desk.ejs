@@ -1,0 +1,23 @@
+<div class="nav-desk">
+  <h4 onclick="accueil()" style="cursor: pointer; color: black;"><strong>LafyShop</strong></h4>
+  <input class="input"  name="text" type="text" placeholder="Rechercher ici ....">
+
+  <!-- <label class="switch">
+    <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+    <span class="check-slider"></span>
+  </label> -->
+  <i class='bx bx-user' style="font-size: 2.2rem; cursor: pointer; color: black;"></i>
+  <i onclick="panier()" class='bx bxs-shopping-bag-alt' style="font-size: 2.2rem; cursor: pointer; color: black;"></i>
+
+</div>
+
+<script>
+  // Fonction pour basculer le mode sombre
+  function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle('dark-mode');
+  var mode = localStorage.setItem('mode','dark');
+
+  }
+  
+</script>

@@ -1,0 +1,30 @@
+<div class="details-main" id="productDetails" data-product-id="<%= product.nom %>-<%= product.id %>">
+    <br> <br>
+    <div class="details-img">
+        <img id="productImageUrl" src="<%= product.url %>" alt="<%= product.nom %>" width="150">
+    </div>
+    <div class="details-info">
+        <h2 id="nom"><strong><%= product.nom %></strong></h2>
+        <h5 style="color: grey; text-decoration: line-through;"><%= product.faux_prix %> CFA</h5>
+        <h2><%= product.prix %> CFA</h2>
+        <br>
+        <p><%= product.details %></p>
+        <span>Quantité :</span> <br>
+        <select name="Quantite" id="Quantite">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+<br>
+<button id="addToCartBtn" type="button">Ajouter au panier</button>
+<br>
+<br> <br> <br> <br>
+    </div>
+</div>
